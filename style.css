@@ -1,0 +1,125 @@
+/* Custom variables for colors */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+/* Google Fonts */
+/**************************/
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900 */
+/* .figtree-<uniquifier>
+font-weight: <weight>; */
+
+.figtree-font {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.figtree-font--med {
+  font-weight: 500;
+}
+
+.figtree-font--xbold {
+  font-weight: 800;
+}
+/**************************/
+
+/* General card styling */
+body {
+  font-size: 1rem;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  max-width: 30rem;
+  padding: 1em;
+  background-color: var(--white);
+  border: solid 1px var(--black);
+  border-radius: 15px;
+  box-shadow: 10px 10px 0 0 var(--black);
+}
+
+/* Image box */
+.image-box {
+  margin-bottom: 1.5rem;
+}
+
+.image-box-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Text box */
+.text--tag {
+  display: inline-block;
+  background-color: var(--yellow);
+  padding: 0.4em 0.8em;
+  margin-bottom: 0rem;
+}
+
+.text--published {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.text--title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text--title-anchor {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px var(--yellow);
+  }
+
+  &:hover {
+    color: var(--yellow);
+  }
+
+  &:active {
+    text-decoration: dotted;
+  }
+}
+
+.text--description {
+  color: var(--grey);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.text--author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text--author-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.text--author-name {
+  margin-block-start: 0;
+}
+
+/* Footer */
+.attribution {
+  font-size: 0.6875rem; /* 11px */
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

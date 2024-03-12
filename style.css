@@ -47,6 +47,7 @@ body {
   border: solid 1px var(--black);
   border-radius: 15px;
   box-shadow: 10px 10px 0 0 var(--black);
+  position: relative; /* to make the whole card clickable */
 }
 
 /* Image box */
@@ -93,6 +94,17 @@ body {
     text-decoration: dotted;
   }
 }
+
+/* to make the whole card clickable */
+.text--title-anchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+/* =============================== */
 
 .text--description {
   color: var(--grey);

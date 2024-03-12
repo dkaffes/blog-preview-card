@@ -57,7 +57,9 @@ CSS nesting and the `&` nesting selector were used for the `focus`, `hover` and 
 
 ### What I learned
 
-A revision of some basic stuff that I have already learned through the previously solved Front End Mentor (FED) challenges.
+- A revision of some basic stuff that I have already learned through the previously solved Front End Mentor (FED) challenges.
+
+- How to make the whole card clickable using a pseudo-content trick.
 
 ### Continued development
 
@@ -66,6 +68,7 @@ Study in more detail the Andy Bell's: A (more) Modern CSS Reset in more detail.
 ### Useful resources
 
 - [A (more) Modern CSS Reset](https://piccalil.li/blog/a-more-modern-css-reset/) - This helped me include in my code the proposed (by many FED mentors) CSS reset.
+- [How to make the whole card clickable](https://inclusive-components.design/cards/) using the pseudo-content trick described here.
 
 ## Author
 

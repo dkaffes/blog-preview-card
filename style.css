@@ -179,8 +179,17 @@ body {
   text-decoration: none;
   cursor: pointer;
 
+  &:link,
+  &:visited {
+    color: var(--black);
+  }
+
   &:focus {
-    box-shadow: inset 0 0 0 2px var(--yellow);
+    outline: none;
+    /* box-shadow: inset 0 0 0 4px var(--yellow); */
+    border-radius: 8px;
+    padding: 0.3rem 0;
+    border: 4px dashed var(--grey);
   }
 
   &:hover {
@@ -188,7 +197,8 @@ body {
   }
 
   &:active {
-    text-decoration: dotted;
+    background: var(--black);
+    border: none;
   }
 }
 
